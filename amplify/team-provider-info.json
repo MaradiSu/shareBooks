@@ -13,7 +13,10 @@
     },
     "categories": {
       "function": {
-        "sharebooks90c8cf5d90c8cf5dPostAuthentication": {}
+        "sharebooks90c8cf5d90c8cf5dPostAuthentication": {
+          "deploymentBucketName": "amplify-sharebooks-dev-12727-deployment",
+          "s3Key": "amplify-builds/sharebooks90c8cf5d90c8cf5dPostAuthentication-496d4f5635734a686636-build.zip"
+        }
       },
       "auth": {
         "sharebooks90c8cf5d90c8cf5d": {}

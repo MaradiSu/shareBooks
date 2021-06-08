@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "sharebooks",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authsharebooks90c8cf5d90c8cf5d",
+      "Outputs.UserPoolId"
+    ]
+  }
+}

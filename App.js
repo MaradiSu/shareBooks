@@ -16,6 +16,7 @@ import Router from './src/navigation/Root';
 
 import Amplify from 'aws-amplify'
 import config from './src/aws-exports'
+import { withAuthenticator } from 'aws-amplify-react-native'
 Amplify.configure(config)
 
 navigator.geolocation = require('@react-native-community/geolocation');
@@ -63,4 +64,4 @@ const App: () => React$Node = () => {
   );
 };
 
-export default App;
+export default withAuthenticator(App);
