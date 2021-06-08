@@ -2,7 +2,7 @@ import React from "react";
 import { Image, FlatList } from "react-native";
 import MapView, {PROVIDER_GOOGLE, Marker} from 'react-native-maps';
 
-import cars from '../../assets/data/cars';
+import cars from '../../assets/data/users';
 
 const HomeMap = (props) => {
 

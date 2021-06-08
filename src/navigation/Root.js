@@ -23,15 +23,15 @@ const RootNavigator = (props) => {
       }>
         <Drawer.Screen name="Home" component={HomeNavigator} />
 
-        <Drawer.Screen name="Your Trips">
-           {() => <DummyScreen name={"Your Trips"} />}
+        <Drawer.Screen name="Transactions">
+           {() => <DummyScreen name={"Your prev transactions"} />}
         </Drawer.Screen>
 
         <Drawer.Screen name="Help">
           {() => <DummyScreen name={"Help"} />}
         </Drawer.Screen>
 
-        <Drawer.Screen name="Wallet">
+        <Drawer.Screen name="Favourites">
           {() => <DummyScreen name={"Wallet"} />}
         </Drawer.Screen>
 

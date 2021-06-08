@@ -20,7 +20,7 @@ const UberTypeRow = (props) => {
   return (
     <View style={styles.container}>
 
-      {/*  Image */}
+      {console.log(type.uri)}
       <Image
         style={styles.image}
         source={type.uri}
