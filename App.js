@@ -13,6 +13,11 @@ import Geolocation from '@react-native-community/geolocation';
 
 import Router from './src/navigation/Root';
 
+
+import Amplify from 'aws-amplify'
+import config from './src/aws-exports'
+Amplify.configure(config)
+
 navigator.geolocation = require('@react-native-community/geolocation');
 
 const App: () => React$Node = () => {

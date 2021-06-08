@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-sharebooks-dev-12727-authRole",
+      "UnauthRoleArn": "arn:aws:iam::223735272888:role/amplify-sharebooks-dev-12727-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::223735272888:role/amplify-sharebooks-dev-12727-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-sharebooks-dev-12727-deployment",
+      "UnauthRoleName": "amplify-sharebooks-dev-12727-unauthRole",
+      "StackName": "amplify-sharebooks-dev-12727",
+      "StackId": "arn:aws:cloudformation:ap-south-1:223735272888:stack/amplify-sharebooks-dev-12727/c3be52f0-c893-11eb-a095-02bd730d2ad6",
+      "AmplifyAppId": "d2n2zr2ft2aflj"
+    },
+    "categories": {
+      "function": {
+        "sharebooks90c8cf5d90c8cf5dPostAuthentication": {}
+      },
+      "auth": {
+        "sharebooks90c8cf5d90c8cf5d": {}
+      }
+    }
+  }
+}

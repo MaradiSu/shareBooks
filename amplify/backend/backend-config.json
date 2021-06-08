@@ -1,0 +1,27 @@
+{
+  "function": {
+    "sharebooks90c8cf5d90c8cf5dPostAuthentication": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "auth": {
+    "sharebooks90c8cf5d90c8cf5d": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "sharebooks90c8cf5d90c8cf5dPostAuthentication",
+          "triggerProvider": "Cognito",
+          "attributes": [
+            "Arn",
+            "Name"
+          ]
+        }
+      ],
+      "customAuth": false
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "trigger": true,
+  "modules": [
+    "custom"
+  ],
+  "parentResource": "sharebooks90c8cf5d90c8cf5d",
+  "functionName": "sharebooks90c8cf5d90c8cf5dPostAuthentication",
+  "resourceName": "sharebooks90c8cf5d90c8cf5dPostAuthentication",
+  "parentStack": "auth",
+  "triggerEnvs": [],
+  "triggerDir": "C:\\Users\\Suresh\\AppData\\Roaming\\npm\\node_modules\\@aws-amplify\\cli\\node_modules\\amplify-category-auth\\provider-utils\\awscloudformation\\triggers\\PostAuthentication",
+  "triggerTemplate": "PostAuthentication.json.ejs",
+  "triggerEventPath": "PostAuthentication.event.json",
+  "roleName": "sharebooks90c8cf5d90c8cf5dPostAuthentication",
+  "skipEdit": true,
+  "enableCors": false
+}
