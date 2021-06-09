@@ -3,7 +3,7 @@ import { View, Text, Pressable } from "react-native";
 import styles from './styles.js';
 import UberTypeRow from '../UberTypeRow';
 
-import typesData from '../../assets/data/types';
+import typesData from '../../assets/data/books';
 
 const UberTypes = (props) => {
   const confirm = () => {

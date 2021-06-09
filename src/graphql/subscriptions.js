@@ -7,6 +7,19 @@ export const onCreateUser = /* GraphQL */ `
       id
       username
       email
+      books {
+        items {
+          id
+          userId
+          uri
+          latitute
+          longitude
+          bookname
+          createdAt
+          updatedAt
+        }
+        nextToken
+      }
       createdAt
       updatedAt
     }
@@ -18,6 +31,19 @@ export const onUpdateUser = /* GraphQL */ `
       id
       username
       email
+      books {
+        items {
+          id
+          userId
+          uri
+          latitute
+          longitude
+          bookname
+          createdAt
+          updatedAt
+        }
+        nextToken
+      }
       createdAt
       updatedAt
     }
@@ -29,6 +55,91 @@ export const onDeleteUser = /* GraphQL */ `
       id
       username
       email
+      books {
+        items {
+          id
+          userId
+          uri
+          latitute
+          longitude
+          bookname
+          createdAt
+          updatedAt
+        }
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onCreateBooks = /* GraphQL */ `
+  subscription OnCreateBooks {
+    onCreateBooks {
+      id
+      userId
+      user {
+        id
+        username
+        email
+        books {
+          nextToken
+        }
+        createdAt
+        updatedAt
+      }
+      uri
+      latitute
+      longitude
+      bookname
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onUpdateBooks = /* GraphQL */ `
+  subscription OnUpdateBooks {
+    onUpdateBooks {
+      id
+      userId
+      user {
+        id
+        username
+        email
+        books {
+          nextToken
+        }
+        createdAt
+        updatedAt
+      }
+      uri
+      latitute
+      longitude
+      bookname
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onDeleteBooks = /* GraphQL */ `
+  subscription OnDeleteBooks {
+    onDeleteBooks {
+      id
+      userId
+      user {
+        id
+        username
+        email
+        books {
+          nextToken
+        }
+        createdAt
+        updatedAt
+      }
+      uri
+      latitute
+      longitude
+      bookname
       createdAt
       updatedAt
     }

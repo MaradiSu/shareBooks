@@ -1,5 +1,19 @@
 type User @model {
-  id: ID!
-  username: String!
-  email: String!
+  id: ID!,
+  username: String!,
+  email: String!,
+  
+  books: [Books] @connection(keyName:"byUser", fields:["id"])
 }
+
+type Books @model
+ @key(name: "byUser", fields: ["userId"]) {
+  id:ID!,
+  userId:ID!,
+  user: User @connection(fields: ["userId"])
+  uri:String!,
+  latitute:Float,
+  longitude:Float,
+  bookname:String!,
+
+  }
