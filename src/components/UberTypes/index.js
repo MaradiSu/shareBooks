@@ -1,13 +1,15 @@
 import React from "react";
-import { View, Text, Pressable } from "react-native";
+import { View, Text, TouchableHighlight, Alert } from "react-native";
 import styles from './styles.js';
 import UberTypeRow from '../UberTypeRow';
 
 import typesData from '../../assets/data/books';
 
+
+
 const UberTypes = (props) => {
   const confirm = () => {
-    console.warn('confirm');
+    Alert.alert("Request sent to the User ")
   };
 
   return (
@@ -16,16 +18,16 @@ const UberTypes = (props) => {
         <UberTypeRow type={type} key={type.id} />
       ))}
 
-      <Pressable onPress={confirm} style={{
+      <TouchableHighlight onPress={confirm} style={{
         backgroundColor: 'black',
         padding: 10,
         margin: 10,
         alignItems: 'center',
       }}>
         <Text style={{color: 'white', fontWeight: 'bold'}}>
-          Talk to Vendor
+          Request for Book
         </Text>
-      </Pressable>
+      </TouchableHighlight>
     </View>
   );
 };

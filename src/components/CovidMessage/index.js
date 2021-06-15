@@ -8,8 +8,7 @@ const CovidMessage = (props) => {
     <View style={styles.container}>
       <Text style={styles.title}>Covid19 alert</Text>
       <Text style={styles.text}>
-        Upgrading this package often requires the font files linked to your projects to be updated as well. If the automatic linking works for you, running this again should update the fonts.
-      </Text>
+       Travel Only if it is necessery </Text>
       <Text style={styles.learnMore}>Learn more</Text>
     </View>
   );

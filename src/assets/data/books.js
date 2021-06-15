@@ -5,6 +5,7 @@ export default [
     uri:require('../../assets/images/sample1-Copy.png'),
     name: "Rich Dad and Poor Dad",
     duration: 45,
+    total:3
   },
   {
     id: '1',
@@ -12,6 +13,7 @@ export default [
     uri:require('../../assets/images/sample1-Copy.png'),
     name: "Do well before you go un well",
     duration: 30,
+    total:5
   },
   {
     id: '2',
@@ -19,5 +21,6 @@ export default [
     uri:require('../../assets/images/sample1-Copy.png'),
     name: "Health is wealth",
     duration: 27,
+    total:9
   },
 ]

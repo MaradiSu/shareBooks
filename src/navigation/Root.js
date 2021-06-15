@@ -5,7 +5,8 @@ import { createStackNavigator } from '@react-navigation/stack'
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import HomeNavigator from "./Home";
 import CustomDrawer from "./CustomDrawer";
-
+import Request from '../components/Requests/index';
+import Help from '../components/Help/index';
 const Drawer = createDrawerNavigator();
 
 const DummyScreen = (props) => (
@@ -23,12 +24,12 @@ const RootNavigator = (props) => {
       }>
         <Drawer.Screen name="Home" component={HomeNavigator} />
 
-        <Drawer.Screen name="Transactions">
-           {() => <DummyScreen name={"Your prev transactions"} />}
+        <Drawer.Screen name="Requests">
+           {() => <Request />}
         </Drawer.Screen>
 
         <Drawer.Screen name="Help">
-          {() => <DummyScreen name={"Help"} />}
+          {() => <Help />}
         </Drawer.Screen>
 
         <Drawer.Screen name="Favourites">

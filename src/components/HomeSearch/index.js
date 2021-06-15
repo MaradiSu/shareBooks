@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Pressable } from "react-native";
+import { View, Text, Pressable, ScrollView } from "react-native";
 
 import AntDesign from "react-native-vector-icons/AntDesign";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
@@ -17,9 +17,12 @@ const HomeSearch = (props) => {
 
   return (
     <View>
+     
+      
+     
       {/*  Input Box */}
       <Pressable onPress={goToSearch} style={styles.inputBox}>
-        <Text style={styles.inputText}>Where To?</Text>
+        <Text style={styles.inputText}>Nearby Users</Text>
 
         <View style={styles.timeContainer}>
           <AntDesign name={'clockcircle'} size={16} color={'#535353'} />
@@ -29,11 +32,12 @@ const HomeSearch = (props) => {
       </Pressable>
 
       {/* Previous destination */}
+      <ScrollView>
       <View style={styles.row}>
         <View style={styles.iconContainer}>
           <AntDesign name={'clockcircle'} size={20} color={'#ffffff'} />
         </View>
-        <Text style={styles.destinationText}>Spin Nightclub</Text>
+        <Text style={styles.destinationText}>Recents</Text>
       </View>
 
       {/* Home destination */}
@@ -41,8 +45,9 @@ const HomeSearch = (props) => {
         <View style={[styles.iconContainer, {backgroundColor: '#218cff'}]}>
           <Entypo name={'home'} size={20} color={'#ffffff'} />
         </View>
-        <Text style={styles.destinationText}>Spin Nightclub</Text>
+        <Text style={styles.destinationText}>BIET College, Dvg</Text>
       </View>
+      </ScrollView>
     </View>
   );
 };

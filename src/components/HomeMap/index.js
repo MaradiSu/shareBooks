@@ -22,8 +22,8 @@ const HomeMap = (props) => {
       provider={PROVIDER_GOOGLE}
       showsUserLocation={true}
       initialRegion={{
-        latitude: 12.96652374097535,
-        longitude:  77.63448163997789,
+        latitude: 14.456700395779647,
+        longitude:  75.91441096606485,
         latitudeDelta: 0.0222,
         longitudeDelta: 0.0121,
       }}>
@@ -37,9 +37,7 @@ const HomeMap = (props) => {
               width: 70,
               height: 70,
               resizeMode: 'contain',
-              transform: [{
-                rotate: `${car.heading}deg`
-              }]
+              
             }}
             source={getImage(car.type)}
           />

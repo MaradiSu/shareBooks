@@ -22,8 +22,8 @@ const CustomDrawer = (props) => {
           }}/>
 
           <View>
-            <Text style={{color: 'white', fontSize: 24}}>Book Barrower</Text>
-            <Text style={{color: 'lightgrey'}}>my bio</Text>
+            <Text style={{color: 'white', fontSize: 24}}>User Name</Text>
+            <Text style={{color: 'lightgrey'}}>User Bio</Text>
           </View>
         </View>
 
@@ -44,13 +44,8 @@ const CustomDrawer = (props) => {
 
         { /* Do more */}
         <Pressable
-          onPress={() => {console.warn('Make Money Driving')}}>
+          onPress={() => {console.warn('Shaer Your Bokks With Others')}}>
           <Text style={{color: '#dddddd', paddingVertical: 5,}}>Do more with your account</Text>
-        </Pressable>
-
-        {/* Make money */}
-        <Pressable onPress={() => {console.warn('Make Money Driving')}}>
-          <Text style={{color: 'white', paddingVertical: 5}}>Share your Old Books for free</Text>
         </Pressable>
 
 

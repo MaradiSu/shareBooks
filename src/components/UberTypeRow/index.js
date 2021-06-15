@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Image, Text } from "react-native";
+import { View, Image, Text, Pressable, Alert } from "react-native";
 import styles from './styles.js';
 
 import Ionicons from "react-native-vector-icons/Ionicons";
@@ -18,6 +18,16 @@ const UberTypeRow = (props) => {
   }
 
   return (
+    <Pressable onPress={()=>{
+      Alert.alert("Selected "+type.name)
+    }} style={{
+      backgroundColor: 'grey',
+      borderRadius :20,
+      padding: 10,
+      margin: 10,
+      alignItems: 'center',
+    }}>
+    
     <View style={styles.container}>
 
       {console.log(type.uri)}
@@ -30,17 +40,18 @@ const UberTypeRow = (props) => {
         <Text style={styles.type}>
           {type.type}{' '}
           <Ionicons name={'book'} size={16} />
-          3
+          {type.total}
         </Text>
         <Text style={styles.time}>
-          8:03PM drop off
+        {type.duration} {' '} to reach 
         </Text>
       </View>
       <View style={styles.rightContainer}>
-        <Ionicons name={'pricetag'} size={18} color={'#42d742'} />
+        <Ionicons name={'file'} size={18} color={'#42d742'} />
         <Text style={styles.price}>{type.name}</Text>
       </View>
     </View>
+    </Pressable>
   );
 };
 

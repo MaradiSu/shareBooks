@@ -64,4 +64,4 @@ const App: () => React$Node = () => {
   );
 };
 
-export default withAuthenticator(App);
+export default App;
