@@ -18,25 +18,25 @@ export default class EventsView extends Component {
     super(props);
     this.state = {
       data: [
-        {id:1, day:1, month: 'Sep',name:'Anya'}, 
-        {id:2, day:2, month: 'Jan',name:'Ram'}, 
-        {id:3, day:3, month: 'Aug',name:'Shyam'}, 
-        {id:4, day:4, month: 'Dec',name:'Tanya'}, 
-        {id:5, day:5, month: 'Jul',name:'Chai'}, 
-        {id:6, day:6, month: 'Oct',name:'Arya'}, 
-        {id:7, day:7, month: 'Sep',name:'Chitra'},
-        {id:8, day:8, month: 'Jan',name:'Suman'},
-        {id:9, day:10, month: 'May',name:'Rema'},
-        {id:13, day:13, month: 'May',name:'Rema'},
-        {id:10, day:10, month: 'May',name:'Rema'},
-        {id:11, day:11, month: 'May',name:'Rema'},
-        {id:12, day:12, month: 'May',name:'Rema'},
+        {id:1, day:'01', month: 'Sep',name:'Anya',requestedAt:'10:00 am',bookname:'Rich Dada Poor Dad'}, 
+        {id:2, day:'05', month: 'Jan',name:'Ram',requestedAt:'10:00 am',bookname:'Sample users can change here'}, 
+        {id:3, day:'3', month: 'Aug',name:'Shyam',requestedAt:'10:00 am',bookname:'Laanguages and its types'}, 
+        {id:4, day:'4', month: 'Dec',name:'Tanya',requestedAt:'10:00 am',bookname:'Media: A Rapid Growth'}, 
+        {id:5, day:'11', month: 'Jul',name:'Chai',requestedAt:'10:00 am',bookname:'Bring a Change in Life'}, 
+        {id:6, day:'6', month: 'Oct',name:'Arya',requestedAt:'10:00 am',bookname:'Think Like A Monk'}, 
+        {id:7, day:'7', month: 'Sep',name:'Chitra',requestedAt:'10:00 am',bookname:'Rich Dada Poor Dad'},
+        {id:8, day:'18', month: 'Jan',name:'Suman',requestedAt:'10:00 am',bookname:'Ram : The hero of Ramayan'},
+        {id:9, day:'10', month: 'May',name:'Rema',requestedAt:'10:00 am',bookname:'7 best habits for your life'},
+        {id:10, day:'20', month: 'May',name:'Rema',requestedAt:'10:00 am',bookname:'A subtle art of not giving'},
+        {id:11, day:'11', month: 'May',name:'Rema',requestedAt:'10:00 am',bookname:'My expreminent on the truth'},
+        {id:12, day:'16', month: 'May',name:'Rema',requestedAt:'10:00 am',bookname:'Wings of fire'},
+        {id:13, day:'13', month: 'May',name:'Rema',requestedAt:'10:00 am',bookname:'Rich Dada Poor Dad'},
       ],
     };
   }
 
   eventClickListener = (viewId) => {
-    Alert.alert("alert", "event clicked");
+    Alert.alert("alert", "Request redirect");
   }
 
   render() {
@@ -58,9 +58,10 @@ export default class EventsView extends Component {
                      <Text  style={styles.eventMonth}>{item.month}</Text>
                   </View>
                   <View style={styles.eventContent}>
-                    <Text  style={styles.eventTime}>10:00 am - 10:45 am</Text>
-                    <Text  style={styles.userName}>John Doe</Text>
-                    <Text  style={styles.description}>Lorem ipsum dolor sit amet, elit consectetur</Text>
+                    <Text  style={styles.userName}>{item.name}</Text>
+                    <Text  style={styles.description}>{item.bookname}</Text>
+                    <Text  style={styles.eventTime}>Requested at : {item.requestedAt}</Text>
+                    
                   </View>
                 </View>
               </TouchableOpacity>

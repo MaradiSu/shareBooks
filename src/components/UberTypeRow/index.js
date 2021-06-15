@@ -39,7 +39,8 @@ const UberTypeRow = (props) => {
       <View style={styles.middleContainer}>
         <Text style={styles.type}>
           {type.type}{' '}
-          <Ionicons name={'book'} size={16} />
+         
+          <Ionicons name={'journal'} size={16} />
           {type.total}
         </Text>
         <Text style={styles.time}>

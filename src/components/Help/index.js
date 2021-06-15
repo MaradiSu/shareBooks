@@ -17,7 +17,7 @@ export default class CompanyDescriptionView extends Component {
   }
 
   onClickListener = (viewId) => {
-    Alert.alert("Alert", "Button pressed ");
+    Alert.alert("Alert", "Help Reidrect ");
   }
 
   render() {
@@ -25,7 +25,7 @@ export default class CompanyDescriptionView extends Component {
       <ScrollView style={styles.scrollContainer}>
         <View style={styles.container}>
           <Image style={styles.logo} source={{uri: 'https://img.icons8.com/cute-clipart/64/000000/facebook-like.png'}}/>
-          <Text style={styles.companyName}>Bootdey.com</Text>
+          <Text style={styles.companyName}>hometute.in</Text>
           <Text style={styles.slogan}>We create awesome apps!</Text>
           <View style={styles.descriptionContent}>
             <Text style={styles.description}>
@@ -35,7 +35,7 @@ export default class CompanyDescriptionView extends Component {
             </Text>
           </View>
           <TouchableHighlight style={[styles.buttonContainer, styles.sendButton]} onPress={() => this.onClickListener('login')}>
-            <Text style={styles.buttonText}>Done</Text>
+            <Text style={styles.buttonText}>Got to Website</Text>
           </TouchableHighlight>
         </View>
       </ScrollView>
